@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>RITCCO : Home</title>
+    <!-- Favicon -->
+    <!--<link rel="shortcut icon" type="image/icon" href="static/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="static/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="static/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+	<!-- Montserrat for title -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  	<!-- Start Header -->
+	<header id="mu-hero" class="" role="banner">
+		<!-- Start menu  -->
+		<nav class="navbar navbar-fixed-top navbar-default mu-navbar">
+		  	<div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+
+			      <!-- Logo -->
+			      <a class="navbar-brand" href="\admin">RITCCO Admin</a>
+
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav mu-menu navbar-right">
+			      		<li><a href="#mu-hero">Home</a></li>
+				        <li><a href="#mu-about">About Us</a></li>
+			            <li><a href="#mu-register">Register</a></li>
+			            <li><a href="#mu-table">Applicants</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End menu -->
+
+		<div class="mu-hero-overlay">
+			<div class="container">
+				<div class="mu-hero-area">
+
+					<!-- Start hero featured area -->
+					<div class="mu-hero-featured-area">
+						<!-- Start center Logo -->
+						<div class="mu-logo-area">
+							<!-- text based logo -->
+							<a class="mu-logo" href="#mu-register">RITCCO</a>
+							<!-- image based logo -->
+							<!-- <a class="mu-logo" href="#"><img src="static/images/logo.jpg" alt="logo img"></a> -->
+						</div>
+						<!-- End center Logo -->
+
+						<div class="mu-hero-featured-content">
+
+							<h1>HELLO! WELCOME TO RITCCO</h1>
+							<h2 style="margin-top:120px;">International IT Professionals</h2>
+
+							<div class="mu-event-counter-area">
+								<div id="mu-event-counter">
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- End hero featured area -->
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start main content -->
+	<main role="main">
+		<!-- Start About -->
+		<section id="mu-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+							<!-- Start Feature Content -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mu-about-left">
+										<img class="" src="static/images/about123.jpg" style="width: 544px;" alt="Men Speaker">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mu-about-right">
+										<h2>About RITCCO</h2>
+										<p>
+											RITCCO is an IT company that specializes in various best in breed, cutting-edge technologies. Our services range from enterprise business applications, e-business, web applications and networking, to hardware maintenance and open source solutions. In such a competitive world, your business has to run at its peak performance, rendering optimal results in an easy and efficient way. Our job is to analyze, consult, implement and deliver practical solutions tailored to your particular IT needs.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- End Feature Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+		<!-- Start Register  -->
+		<section id="mu-register">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-register-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Register Form</h2>
+								<p>
+									Fill in the below fields with the required information. All fields are mandatory.
+									Please attach CV/Resume in DOCX or PDF format with name of the file being your full name
+									as registered with us. For e.g Shivam Pandey's CV/Resume shall be uploaded with name
+									<strong>SHIVAM_PANDEY.DOCX</strong>.
+								</p>
+							</div>
+
+							<div class="mu-register-content">
+								<form class="mu-register-form" method="POST" enctype="multipart/form-data">
+									{% csrf_token %}
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Your Full Name" id="name" name="name" required="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Enter Your Email" id="mail" name="mail" required="">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Your Phone Number" id="telephone" name="mobi" required="">
+											</div>
+										</div>
+										<div class="col-md-6">
+
+										<div class="form-group">
+											<select class="form-control" name="expr" id="ticket">
+												<option value="none" disabled selected>Your Experience</option>
+												<option value="2+">More than 2 years</option>
+												<option value="5+">More than 5 years</option>
+												<option value="7+">More than 7 years</option>
+											</select>
+										</div>
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<select class="form-control" name="post" id="post">
+													<option value="none" disabled selected>Applying For</option>
+													<option value="Python">Python Developer</option>
+													<option value="Java">Java Developer</option>
+													<option value="Sales">Business Development</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="file" name="myfile" required>
+											</div>
+										</div>
+									</div>
+									{% if message %}
+									<div>
+										<p>{{message}}</p>
+									</div>
+									{% endif %}
+									<button type="submit" class="mu-reg-submit-btn">SUBMIT</button>
+
+					            </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Register -->
+
+		<section id="mu-table">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Applicants</h2>
+							</div>
+
+							<table>
+									<col width="600">
+  									<col width="600">
+  									<col width="300">
+								<tr>
+									<th style="color: white; background-color: #EE3268;">Name</th>
+									<th style="color: white; background-color: #EE3268;">Profile</th>
+									<th style="color: white; background-color: #EE3268;">Status</th>
+								</tr>
+								{% for app in data %}
+								<tr>
+									<td>{{app.name}}</td>
+									<td>{{app.domain}}</td>
+									<td>{{app.status}}</td>
+								</tr>
+								{% endfor %}
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+
+	<!-- End main content -->
+
+
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+			<div class="container">
+				<div class="mu-footer-area">
+					<div class="mu-footer-top">
+						<div class="mu-social-media">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="mu-footer-bottom">
+						<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://www.ritcco.com">RITCCO</a>. All right reserved.</p>
+					</div>
+				</div>
+			</div>
+
+	</footer>
+	<!-- End footer -->
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="static/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="static/js/slick.min.js"></script>
+    <!-- Event Counter -->
+    <script type="text/javascript" src="static/js/jquery.countdown.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="static/js/app.js"></script>
+
+
+
+    <!-- Custom js -->
+	<script type="text/javascript" src="static/js/custom.js"></script>
+
+
+
+
+  </body>
+</html>

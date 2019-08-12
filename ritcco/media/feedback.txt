@@ -1,0 +1,14 @@
+Name                                                                                                                      Email Id
+
+City                                                                                                                          Business Unit
+
+Feedback Questions	Options
+Did you participated in i-SPRINT 2019.	Yes  No
+Were the communications on i-SPRINT 2019 good for building awareness.	Yes  No
+I liked the idea of digital i-SPRINT.	Yes  No
+i-Sprint initiatives helped us in sharing, learning and collaboration.	Yes  No
+i-SPRINT portal kept me updated on the event.	Yes  No
+i-SPRINT 2019 events brought awareness on Best Practices, Emerging Technologies and Various Process initiatives within our organization.	Yes  No
+Events like i-SPRINT 2019 help promoting quality culture at Capgemini.	Yes  No
+Comments 
+
